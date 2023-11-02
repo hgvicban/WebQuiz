@@ -4,9 +4,11 @@ public class Response {
     private boolean success;
     private String feedback;
 
-    public Response(boolean success, String feedback) {
+    public Response(boolean success) {
         this.success = success;
-        this.feedback = feedback;
+        this.feedback = success ?
+                "Congratulations, you're right!" :
+                "Wrong answer! Please, try again.";
     }
 
     public boolean isSuccess() {
