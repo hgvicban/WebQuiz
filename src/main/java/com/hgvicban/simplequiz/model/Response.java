@@ -1,14 +1,16 @@
 package com.hgvicban.simplequiz.model;
 
 public class Response {
+
+    public static final String CONGRATULATIONS = "Congratulations, you're right!";
+    public static final String WRONG_ANSWER = "Wrong answer! Please, try again.";
+
     private boolean success;
     private String feedback;
 
     public Response(boolean success) {
         this.success = success;
-        this.feedback = success ?
-                "Congratulations, you're right!" :
-                "Wrong answer! Please, try again.";
+        this.feedback = success ? CONGRATULATIONS : WRONG_ANSWER;
     }
 
     public boolean isSuccess() {

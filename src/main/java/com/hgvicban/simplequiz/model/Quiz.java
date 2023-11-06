@@ -1,7 +1,11 @@
 package com.hgvicban.simplequiz.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Quiz {
@@ -9,14 +13,18 @@ public class Quiz {
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private int id;
 
+    @NotBlank
     private String title;
 
+    @NotBlank
     private String text;
 
+    @Size(min = 2)
+    @NotNull
     private List<String> options;
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    private int answer;
+    private int[] answer;
 
     public int getId() {
         return id;
@@ -50,15 +58,16 @@ public class Quiz {
         this.options = options;
     }
 
-    public int getAnswer() {
+    public int[] getAnswer() {
         return answer;
     }
 
-    public void setAnswer(int answer) {
+    public void setAnswer(int[] answer) {
         this.answer = answer;
     }
 
-    public boolean checkAnswer(int answer) {
-        return this.getAnswer() == answer;
+    public boolean checkAnswer(int[] answer) {
+        if (this.answer == null && answer.length == 0) return true;
+        else return Arrays.equals(this.answer, answer);
     }
 }
