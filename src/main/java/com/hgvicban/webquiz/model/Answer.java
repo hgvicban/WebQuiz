@@ -1,14 +1,16 @@
 package com.hgvicban.webquiz.model;
 
+import java.util.List;
+
 public class Answer {
 
-    private int[] answer;
+    private List<Integer> answer;
 
-    public int[] getAnswer() {
+    public List<Integer> getAnswer() {
         return answer;
     }
 
-    public void setAnswer(int[] answer) {
+    public void setAnswer(List<Integer> answer) {
         this.answer = answer;
     }
 }
