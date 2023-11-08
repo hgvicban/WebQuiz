@@ -1,13 +1,13 @@
-package com.hgvicban.simplequiz;
+package com.hgvicban.webquiz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SimpleQuizApplication {
+public class WebQuizApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SimpleQuizApplication.class, args);
+        SpringApplication.run(WebQuizApplication.class, args);
     }
 
 }

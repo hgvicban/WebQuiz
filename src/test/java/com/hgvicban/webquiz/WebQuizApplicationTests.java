@@ -1,10 +1,10 @@
-package com.hgvicban.simplequiz;
+package com.hgvicban.webquiz;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SimpleQuizApplicationTests {
+class WebQuizApplicationTests {
 
     @Test
     void contextLoads() {

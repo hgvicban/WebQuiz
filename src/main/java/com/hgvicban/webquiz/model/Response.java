@@ -1,4 +1,4 @@
-package com.hgvicban.simplequiz.model;
+package com.hgvicban.webquiz.model;
 
 public class Response {
 

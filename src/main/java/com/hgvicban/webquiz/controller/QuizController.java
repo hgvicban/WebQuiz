@@ -1,8 +1,8 @@
-package com.hgvicban.simplequiz.controller;
+package com.hgvicban.webquiz.controller;
 
-import com.hgvicban.simplequiz.model.Answer;
-import com.hgvicban.simplequiz.model.Quiz;
-import com.hgvicban.simplequiz.model.Response;
+import com.hgvicban.webquiz.model.Answer;
+import com.hgvicban.webquiz.model.Quiz;
+import com.hgvicban.webquiz.model.Response;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
 import org.springframework.http.HttpStatus;

@@ -1,4 +1,4 @@
-package com.hgvicban.simplequiz.model;
+package com.hgvicban.webquiz.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotBlank;
